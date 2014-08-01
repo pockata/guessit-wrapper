@@ -46,7 +46,7 @@ module.exports = (function () {
         if (isPOST) {
             req.write(query);
         }
-        
+
         req.end();
 
         return deferred.promise;
@@ -57,7 +57,7 @@ module.exports = (function () {
         return apiCall('/guessit_version');
     }
 
-    function guessMovie (filename, post) {
+    function parseName (filename, post) {
 
         return apiCall('/guess', {
             'filename': filename
@@ -74,7 +74,7 @@ module.exports = (function () {
     return {
         'apiCall': apiCall,
         'getVersion': getVersion,
-        'movie': guessMovie,
+        'parseName': parseName,
         'submitBug': submitBug
     };
 })();
