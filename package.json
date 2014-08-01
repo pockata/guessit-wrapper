@@ -1,0 +1,30 @@
+{
+  "name": "guessit-wrapper",
+  "version": "0.1.0",
+  "description": "Wrapper for the http://guessit.io api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pockata/guessit-wrapper.git"
+  },
+  "keywords": [
+    "guess",
+    "movie",
+    "filename",
+    "guessit",
+    "guessit.io",
+    "torrent"
+  ],
+  "author": "Rosen Stoyanov <me@pockata.org> (http://pockata.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pockata/guessit-wrapper/issues"
+  },
+  "homepage": "https://github.com/pockata/guessit-wrapper",
+  "dependencies": {
+    "q": "^1.0.1"
+  }
+}
