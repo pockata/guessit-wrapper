@@ -17,7 +17,7 @@ var guessit = require('guessit-wrapper');
 
 var filename = 'doctor_who_2005.6x03.the_curse_of_the_black_spot.720p_hdtv_x264-fov.mkv';
 guessit.parseName(filename).then(function (data) {
-        console.log('data');
+        console.log(data);
 });
 ```
 
