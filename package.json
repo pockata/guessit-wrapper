@@ -1,6 +1,6 @@
 {
   "name": "guessit-wrapper",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Wrapper for the http://guessit.io api",
   "main": "index.js",
   "scripts": {
