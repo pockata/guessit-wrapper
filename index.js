@@ -35,7 +35,7 @@ module.exports = (function () {
             res.setEncoding('utf8');
 
             res.on('data', function (chunk) {
-                deferred.resolve(chunk);
+                deferred.resolve(JSON.parse(chunk));
             });
         });
 
