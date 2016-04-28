@@ -36,10 +36,10 @@ module.exports = (function () {
 
             res.on('data', function (chunk) {
                 var parsedJson;
-                try{
+                try {
                     parsedJson = JSON.parse(chunk);
-                }catch(e)
-                {
+                }
+                catch(e) {
                     deferred.reject(e.message);
                     return;
                 }
