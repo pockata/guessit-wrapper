@@ -28,15 +28,6 @@ Make a request to the API:
 * `filename` - The filaname that should be parsed
 * `request_method` - set to `true` for `POST` method. By default `GET` will be used
 
-## guessit.getVersion()
-Requests the current API version
-
-
-## guessit.submitBug(filename)
-Submits a but report containing a wrongly interpreted file name
-
-* `filename` - the file name to send in the bug report
-
 ## guessit.apiCall(path, [queryString], [request_method])
 Makes a generic API call
 
