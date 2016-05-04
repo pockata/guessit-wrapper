@@ -61,13 +61,12 @@ module.exports = (function () {
     }
 
     function parseName (filename, post) {
-        return apiCall('/', {
-            'filename': filename
-        }, post);
+      return apiCall('/', {
+          'filename': filename
+      }, post);
     }
 
     return {
-        'apiCall': apiCall,
-        'parseName': parseName
+      'parseName': parseName
     };
 })();

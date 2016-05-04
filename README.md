@@ -17,7 +17,7 @@ var guessit = require('guessit-wrapper');
 
 var filename = 'doctor_who_2005.6x03.the_curse_of_the_black_spot.720p_hdtv_x264-fov.mkv';
 guessit.parseName(filename).then(function (data) {
-        console.log(data);
+  console.log(data);
 });
 ```
 
@@ -26,11 +26,3 @@ guessit.parseName(filename).then(function (data) {
 Make a request to the API:
 
 * `filename` - The filaname that should be parsed
-* `request_method` - set to `true` for `POST` method. By default `GET` will be used
-
-## guessit.apiCall(path, [queryString], [request_method])
-Makes a generic API call
-
-* `path` - the API endpoint path to call, e.g. `/guess`
-* `queryString` - an object containing the query string. Properties will be url escaped
-* `request_method` - set to `true` for `POST` method. By default `GET` will be used
