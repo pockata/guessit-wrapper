@@ -17,7 +17,7 @@ module.exports = (function () {
         }
 
         var options = {
-            'hostname': 'guessit.io',
+            'hostname': 'v2.api.guessit.io',
             'port': 80,
             'path': path,
             'method': isPOST ? 'POST' : 'GET'
@@ -60,29 +60,13 @@ module.exports = (function () {
         return deferred.promise;
     }
 
-    function getVersion () {
-
-        return apiCall('/guessit_version');
-    }
-
     function parseName (filename, post) {
-
-        return apiCall('/guess', {
-            'filename': filename
-        }, post);
-    }
-
-    function submitBug (filename) {
-
-        return apiCall('/bugs', {
-            'filename': filename
-        }, true);
+      return apiCall('/', {
+          'filename': filename
+      }, post);
     }
 
     return {
-        'apiCall': apiCall,
-        'getVersion': getVersion,
-        'parseName': parseName,
-        'submitBug': submitBug
+      'parseName': parseName
     };
 })();
